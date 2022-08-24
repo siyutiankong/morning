@@ -55,10 +55,10 @@ wm = WeChatMessage(client)
 # wea, temperature = get_weather()
 weather_city,weather_tianqi,temp,wind = get_weather()
 data = {
-        "weather_city":{"value":weather_city},"color":get_random_color(),
-        "weather_tianqi":{"value":weather_tianqi},"color":get_random_color(),
-        "temperature":{"value":temp},"color":get_random_color(),
-        "wind":{"value":wind},"color":get_random_color(),
+        "weather_city":{"value":weather_city,"color":get_random_color()},
+        "weather_tianqi":{"value":weather_tianqi,"color":get_random_color()},
+        "temperature":{"value":temp,"color":get_random_color()},
+        "wind":{"value":wind,"color":get_random_color()},
         # "love_days":{"value":get_count()},
         # "birthday_left":{"value":get_birthday()},
         "words":{"value":get_words(), "color":get_random_color()}}
